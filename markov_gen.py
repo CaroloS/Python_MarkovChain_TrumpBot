@@ -1,4 +1,4 @@
-# imports MarkovChain and makes an instance it
+# Imports markov_python module and makes an instance of the MarkovChain class
 # Adds speech text file
 
 from markov_python.cc_markov import MarkovChain    
@@ -7,7 +7,7 @@ mc = MarkovChain()
 MarkovChain.add_file(mc, 'Trump_speech.txt')
  
 # Generates text and alters output into 'sonnet' form
-# Uses a while loop to generate text (12 words) 14 times
+# Uses a while loop to generate 12 words for 14 lines
 # Capitalises first letters. Indents last 2 lines, to make a 'couplet'
    
 print 'A little Trump sonnet...  ', '\n'
@@ -34,7 +34,7 @@ print sonnet
 # Imports tweepy, assigns the specific authorisation keys to access the API
 # Iterates through one 'sonnet' and tweets each line every 15 minutes
 
-"""import tweepy, time
+import tweepy, time
  
 enter the corresponding information from your Twitter application:
 CONSUMER_KEY = '*************************'
@@ -50,9 +50,7 @@ print tweet[0]
     
 for line in tweet:    
     api.update_status(line)
-    time.sleep(900)#Tweet every 15 minutes"""
-    
-    
+    time.sleep(900)#Tweet every 15 minutes
     
     
     
