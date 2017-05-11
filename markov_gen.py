@@ -34,23 +34,23 @@ print sonnet
 # Imports tweepy, assigns the specific authorisation keys to access the API
 # Iterates through one 'sonnet' and tweets each line every 15 minutes
 
-import tweepy, time
+#import tweepy, time
  
-enter the corresponding information from your Twitter application:
-CONSUMER_KEY = '*************************'
-CONSUMER_SECRET = '**************************' 
-ACCESS_KEY = '**********************************'
-ACCESS_SECRET = '*********************************'
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-api = tweepy.API(auth)
+#enter the corresponding information from your Twitter application:
+#CONSUMER_KEY = '*************************'
+#CONSUMER_SECRET = '**************************' 
+#ACCESS_KEY = '**********************************'
+#ACCESS_SECRET = '*********************************'
+#auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+#auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+#api = tweepy.API(auth)
  
 tweet = sonnet.splitlines()
-print tweet[0]
+print "\n" + "Trump Tweet:" + "\n" + tweet[0]
     
-for line in tweet:    
-    api.update_status(line)
-    time.sleep(900)#Tweet every 15 minutes
+#for line in tweet:    
+    #api.update_status(line)
+    #time.sleep(900)#Tweet every 15 minutes
     
     
     

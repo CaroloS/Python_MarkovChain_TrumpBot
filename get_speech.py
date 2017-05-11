@@ -48,7 +48,11 @@ else:
 
     speech = ' '.join(slst)
     speech = speech.strip()
-    print speech
+    #print speech
+    
 
-    with open('Trump_speech.txt', 'w') as text_file:
-        text_file.write(speech)   
+#  Currently unable to acces WSJ article as requires subscription,
+#  Use .txt file of the speech for rest of program
+
+    with open('Trump_speech.txt', 'r') as text_file:
+       print text_file.read()  
