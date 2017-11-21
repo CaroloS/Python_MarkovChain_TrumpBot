@@ -1,5 +1,3 @@
-# Codecademy_Assignment
-
 # Donald Trump Markov Chain Sonnet Generator and TwitterBot
 A Program in Python, consisting of 3 files. This program takes the transcript from a Donald Trump speech, makes a word count dictionary to analyse word frequency, and inputs the speech into a Markov-Chain generator. This produces pseudo-random text from the speech, which is made into sonnets and tweeted line by line.
 
